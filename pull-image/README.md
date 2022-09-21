@@ -17,8 +17,9 @@ sonobuoy gen default-image-config > custom-repo-config.yaml
 3. start up sonobuoy
 ```sh
 sonobuoy run  --mode=certified-conformance  \
-    --plugin e2e --e2e-repo-config ./custom-repo-config.yaml 
-    --kube-conformance-image docker.io/ycsit/conformance:v1.24.0 
+    --plugin e2e \
+    --e2e-repo-config ./custom-repo-config.yaml \
+    --kube-conformance-image docker.io/ycsit/conformance:v1.24.0 \
     --sonobuoy-image docker.io/sonobuoy/sonobuoy:v0.56.10 
 ```
 4. check sonobuoy and wait for success
