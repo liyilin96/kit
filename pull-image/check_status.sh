@@ -1,7 +1,7 @@
 # check when sonobuoy on
 status=1 
 # set private registry
-registry="172.10.13.240:32082" 
+registry="PRIVATE_REGISTRY_DOMAIN" 
 
 while ((status > 0));do 
   # get err pod
