@@ -14,6 +14,7 @@ nohup ./check_status.sh > mycheckimg.log 2>&1 &
 ```
 sonobuoy gen default-image-config > custom-repo-config.yaml
 ```
+- and edit it referring to your private regristry
 3. start up sonobuoy
 ```sh
 sonobuoy run  --mode=certified-conformance  \
