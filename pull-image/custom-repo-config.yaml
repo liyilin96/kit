@@ -1,0 +1,9 @@
+buildImageRegistry: 172.10.13.240:32082/build-image
+dockerGluster: docker.io/gluster
+dockerLibraryRegistry: docker.io/library
+e2eRegistry: 172.10.13.240:32082/conformance
+e2eVolumeRegistry: 172.10.13.240:32082/conformance//volume
+gcRegistry: 172.10.13.240:32082/conformance
+gcEtcdRegistry: 172.10.13.240:32082/conformance
+promoterE2eRegistry: 172.10.13.240:32082/conformance
+sigStorageRegistry: 172.10.13.240:32082/conformance
