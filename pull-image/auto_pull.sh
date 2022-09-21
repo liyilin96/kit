@@ -6,4 +6,4 @@ echo "descination image is $dest"
 # containerd for cri
 ctr -n k8s.io i pull --all-platforms $src 
 ctr -n k8s.io i tag $src $dest
-ctr -n k8s.io i push  $dest --plain-http=true -u admin:admin
+ctr -n k8s.io i push  $dest --plain-http=true -u USER:PASSWORD
