@@ -6,6 +6,10 @@
 
 ***
 1. set up check-script
+- remember to give authority first 
+```sh
+chmod +x check_status.sh && chmod +x auto_pull.sh
+```
 ```sh
 nohup ./check_status.sh > mycheckimg.log 2>&1 &
 ```
