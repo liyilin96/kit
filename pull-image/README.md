@@ -11,7 +11,7 @@
 sonobuoy gen default-image-config > custom-repo-config.yaml
 ```
 - and edit it referring to your private regristry
-- that means, config cri(docker/containerd) registry dependency in all your cluster node
+- that means, config cri(docker/containerd) registry dependency on all your cluster node
 2. start up sonobuoy
 ```sh
 sonobuoy run  --mode=certified-conformance  \
@@ -22,6 +22,7 @@ sonobuoy run  --mode=certified-conformance  \
 ```
 3. set up check-script
 - remember to give authority first 
+- just run on master node
 ```sh
 chmod +x check_status.sh && chmod +x auto_pull.sh
 ```
