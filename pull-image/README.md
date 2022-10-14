@@ -6,6 +6,7 @@
 
 ***
 
+- check your private registry ip in `check_status.sh` and private registry password in `auto_push.sh`
 1. edit sonobuoy config 
 ```
 sonobuoy gen default-image-config > custom-repo-config.yaml
@@ -20,6 +21,7 @@ sonobuoy run  --mode=certified-conformance  \
     --kube-conformance-image docker.io/ycsit/conformance:v1.24.0 \
     --sonobuoy-image docker.io/sonobuoy/sonobuoy:v0.56.10 
 ```
+- confornamce version follows k8s version
 3. set up check-script
 - remember to give authority first 
 - just run on master node
